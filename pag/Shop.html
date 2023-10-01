@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang=" es en">
+<html lang=" es ">
     <head>
         <title>Shop-Funkoshop</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8">ss
         <meta name="author" content="Grupo 6- comision-23582">
         <meta name="keywords" content="HTML, CSS, JavaScript">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
         <nav>
         <picture>
             <a href="Index.html">
-        <img src="multimedia/branding/logo_light_horizontal.svg" alt="Logo funkos">
+        <img src="/multimedia/branding/logo_light_horizontal.svg" alt="Logo funkos">
     </a>
     </picture>
     <div class="navbar" id="menu-shop">
@@ -22,7 +22,7 @@
         <li><a href="pag/Shop.html">SHOP</a></li>
         <li><a href="pag/contacto.html">CONTACTO</a></li>
         <li><a href="pag/login.html">LOGIN</a></li>
-        <li><a href="pag/Carrito.html"><img src="multimedia/icons/cart-icon.svg" alt="logo de Carrito"></a></li>
+        <li><a href="pag/Carrito.html"><img src="/multimedia/icons/cart-icon.svg" alt="logo de Carrito"></a></li>
       </ul>
    </div>
      
@@ -30,11 +30,181 @@
     </div>
     </header>
     <!-- fin header -->
-    <main>
-
-    </main>
-    
-</body>
+     <!-- formulario de la izquierda -->
+  <main>
+    <div class="container">
+      <div class="container-form" id="formulario">
+        <section class="form" id="busqueda">
+          <article>
+            <h4>Buscar</h4>
+            <form method="get" action="item.html" target="_blank">
+            <fieldset>
+              <input class="categoria" type="search" name="categoria" placeholder="Item o categoria" autofocus required><br>
+            <h4><b>Ordenar por:</b><br></h4>
+            <select class="Ordenar" name="orden" placeholder="mayor a menor">
+               <option label="ordenar" value="" selected="ordenar"></option>
+               <option value="mayor">Mayor a menor</option>
+               <option value="menor">Menor a Mayor</option>
+               <option value="viejo">Mas antiguos</option>
+               <option value="nuevo">Actuales</option>
+            </select><br>
+               <h4>Precio</h4>
+                <input class="precio" type="number" name="precio" min="0" max="1000" placeholder="min">
+                <input class="precio" type="number" name="precio" min="1000" max="15000" placeholder="max">
+              <h4>Filtrar</h4>
+                 <label><input class="option" type="checkbox" name="Filtrar">Nuevos</label><br> 
+                 <label><input class="option" type="checkbox" name="Filtrar">Ofertas</label><br> 
+                 <label><input class="option" type="checkbox" name="Filtrar">Edición especial</label><br>
+                 <label><input class="option" type="checkbox" name="Filtrar">Favoritos</label><br> 
+            </fieldset>
+          </article>
+          </form>
+      </section>
+      </div>
+      <div class="container-figuras" id="figuras">
+         <!-- Presentación de los productos -->
+        <section class="figuras-top" id="figuras">
+          <ul>
+            <li>
+              <article>
+                <a href="starwars.html">
+                  <picture class="productos"><img class="productos" src="/multimedia/star-wars/trooper-1.webp" alt="trooper-1"></picture>
+                          <div class="tex-prod">
+                              <p>Stars Wars</p>
+                              <h4>STORMTROOPER LIGHTSABER</h4>
+                              <p>$1799.99</p>
+                              <p>3 cuotas sin interés</p>
+                          </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a href="pokemon.html">
+                  <picture class="productos"><img class="productos" src="/multimedia/pokemon/pidgeotto-1.webp" alt="pidgeotto-1"></picture> 
+                          <div class="tex-prod">
+                            <p>Pokemon</p>
+                           <h4>PIDGEOTTO</h4> 
+                           <p>$1799.99</p>
+                           <p>3 cuotas sin interés</p>
+                          </div>
+                          </a>
+                </a>
+              </article>
+            </li>
+            
+            <li>
+             <article>
+              <a href="harrypotter.html">
+                <picture class="productos"><img class="productos" src="/multimedia/harry-potter/luna-1.webp" alt="lUNA DE harry-potter"></picture>
+                       <div class="tex-prod">
+                       <p>Harry Potter</p>
+                       <h4>LUNA LOVEGOOD LION MASK</h4>
+                       <p>$1799.99</p>
+                       <p>3 cuotas sin interés</p>
+                       </div>
+                          </a>
+              </a>
+             </article>
+            </li>
+          </ul>
+        </section>
+        <section class="figuras-center" id="figuras">
+          <ul>
+            <li>
+              <article>
+                <a href="starwars.html">
+                  <picture class="productos"><img class="productos" src="/multimedia/star-wars/trooper-1.webp" alt="trooper-1"></picture>
+                          <div class="tex-prod">
+                              <p>Stars Wars</p>
+                              <h4>STORMTROOPER LIGHTSABER</h4>
+                              <p>$1799.99</p>
+                              <p>3 cuotas sin interés</p>
+                          </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a href="pokemon.html">
+                  <picture class="productos"><img class="productos" src="/multimedia/pokemon/pidgeotto-1.webp" alt="pidgeotto-1"></picture> 
+                          <div class="tex-prod">
+                            <p>Pokemon</p>
+                           <h4>PIDGEOTTO</h4> 
+                           <p>$1799.99</p>
+                           <p>3 cuotas sin interés</p>
+                          </div>
+                          </a>
+                </a>
+              </article>
+            </li>
+            
+            <li>
+             <article>
+              <a href="harrypotter.html">
+                <picture class="productos"><img class="productos" src="/multimedia/harry-potter/luna-1.webp" alt="lUNA DE harry-potter"></picture>
+                       <div class="tex-prod">
+                       <p>Harry Potter</p>
+                       <h4>LUNA LOVEGOOD LION MASK</h4>
+                       <p>$1799.99</p>
+                       <p>3 cuotas sin interés</p>
+                       </div>
+                          </a>
+              </a>
+             </article>
+            </li>
+          </ul>
+        </section>
+        <section class="figuras-bottom" id="figuras">
+          <ul>
+            <li>
+              <article>
+                <a href="starwars.html">
+                  <picture class="productos"><img class="productos" src="/multimedia/star-wars/trooper-1.webp" alt="trooper-1"></picture>
+                          <div class="tex-prod">
+                              <p>Stars Wars</p>
+                              <h4>STORMTROOPER LIGHTSABER</h4>
+                              <p>$1799.99</p>
+                              <p>3 cuotas sin interés</p>
+                          </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a href="pokemon.html">
+                  <picture class="productos"><img class="productos" class="productos" src="/multimedia/pokemon/pidgeotto-1.webp" alt="pidgeotto-1"></picture> 
+                          <div class="tex-prod">
+                            <p>Pokemon</p>
+                           <h4>PIDGEOTTO</h4> 
+                           <p>$1799.99</p>
+                           <p>3 cuotas sin interés</p>
+                          </div>
+                          </a>
+                </a>
+              </article>
+            </li>
+            
+            <li>
+             <article>
+              <a href="harrypotter.html">
+                <picture class="productos"><img class="productos" src="/multimedia/harry-potter/luna-1.webp" alt="lUNA DE harry-potter"></picture>
+                       <div class="tex-prod">
+                       <p>Harry Potter</p>
+                       <h4>LUNA LOVEGOOD LION MASK</h4>
+                       <p>$1799.99</p>
+                       <p>3 cuotas sin interés</p>
+                       </div>
+                          </a>
+              </a>
+             </article>
+            </li>
+          </ul>
+        </section>
+        </div>   
+      </main>
+    </div>
+   
 <!-- Aqui comienza el footer -->
 <footer>
     <section>
@@ -46,7 +216,7 @@
             <li><a href="pag/Login.html" target="_blank">Login</a></li>
         </article>
         </ul>
-        <picture><img src=".Codo a Codo/multimedia/branding/isotype.svg" alt="Logo de funkoshop"/></picture>
+        <picture><img src="/multimedia/branding/isotype.svg" alt="Logo de funkoshop"/></picture>
      </nav>
     </section>
       
